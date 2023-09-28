@@ -65,10 +65,15 @@ body {
   text-align: center;
   height: 50px;
   padding: 14px;
+  overflow: hidden;
   background-color: #000;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .navbar a {
+ 
+
   color: white;
   padding: 14px 20px;
   text-decoration: none;
@@ -174,6 +179,7 @@ body {
 
 .side-right {
   flex: 20%;
+  margin-top: 70px;
   padding: 40px;
   border-left: 1px solid #000;
 }
@@ -182,9 +188,10 @@ body {
 
 
 .archive-holder {
+  padding: 10px;
   width: auto;
   height: auto;
-  padding-left: 10px;
+  padding-inline-start: 10px;  
   border: 1px dotted #000;
   border-radius: 10px;
   box-shadow: 10px 10px 5px rgb(103, 103, 104);
@@ -215,16 +222,56 @@ body {
 }
 */
 
+/*
+.tags-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-size: 16px;
+}
+
+.tags-item {
+  -webkit-flex: 1 auto;
+  flex: 1 auto;
+  background-color: #edc0db;
+  border: 1px dotted rgb(52, 51, 51);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tags-item a {
+  display: block;
+  background-color: #edc0db;
+  text-decoration: none;
+  padding: 0.5px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.tags-item a:hover {
+  background-color: #ab837e;
+  border-radius: 10px;
+}
+
+*/
+
+
 /*search bar*/
 .search-container {
+  margin-top: 20px;
   width: 80%;
+  padding: 20px;
   height: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
 }
 
 .input[type=text] {
   font-size: 17px;
   border: 2px dotted #000;
   height: 20px;
+  width: 50px;
 }
 
 .search-container :hover {
@@ -242,7 +289,7 @@ body {
 /* Responsive layout, if screen is less than 700px wide,
  make the two columns stack on top of each other*/
 @media screen and (max-width: 700px) {
-  .row, .navbar, .search-container, .footer {   
+  .row, .navbar, .navbar a, .search-container, .footer {   
     flex-direction: column;
   }
 }
