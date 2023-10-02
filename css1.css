@@ -11,8 +11,8 @@ body {
 }
 
 .divider {
-  height: 10px;
-  margin: 20px;
+  height: 8px;
+  margin: 5px;
 }
 
 #h1 {
@@ -81,12 +81,16 @@ body {
 .navbar a:hover{ 
   background: #ebddda;
 }
-
-/* fix later
 .navbar a:active{
-  background: rgb (252,186,3)
-}*/
+  background: rgb(183, 55, 237);
+  padding: 10px;
+}
 
+.navbar-button a:visited {
+  background: rgb(228, 19, 165)  ;
+}
+
+.navbar
 .navbar-lower {
   background-color: #ffffff;
   text-align: center;
@@ -176,12 +180,25 @@ body {
   text-align: center;
 }
 
+#icon-holder {
+  float: right;
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+#img-link {
+  background-color: black;
+}
+
 .blog-img-s {
   float: left;
   width: 30%;
   height: 20%;
   margin: 10px;
-  filter: gray; 
+  filter: #808080; 
   -webkit-filter: grayscale(0.5);
   transition: all .8s ease-in-out; 
 }
@@ -281,47 +298,72 @@ body {
   box-shadow: 10px 10px 5px rgb(103, 103, 104);
 }
 
+.navbar-archive {
+  display: block;
+  list-style: none;
+}
+
 .navbar-archive li{
   display: block;
   list-style: none;
-  padding: 10px;
+  
 }
 
 .archive-button a {
-  color: #000; 
+  color: #000;
+  width: 40px;
+  padding: 5px;
+  height: 20px;
+  background-color: #ffffff;
   text-decoration: none;
-  transition-duration: 2s;
-}
-
-.archive-button a:hover {
-  background: #ebddda;
-}
-
-/*fix later
-.archive-button a:active {
-  background: rgb(88, 86, 88);
+  transition-duration: 1s;
+  border-radius: 30px;
 }
 
 .archive-button a:visited {
-  background: #564dbf;
+  background-color: #ededed;
+  width: 40px;
+  height: 20px;
+ }
+ 
+.archive-button a:hover {
+  background: #f1d6d0;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
 }
-*/
+
+.archive-button a:active {
+  background-color: #a56f63;
+  width: 40px;
+  height: 20px;
+  
+}
+
+
+
+
+
+
+
+
 
 /*search bar*/
 
 .search-container {
   margin-top: 20px;
-  width: 80%;
+  width: 100%;
   height: 20px;
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-.input[type=text] {
+.input-bar {
   font-size: 17px;
-  border: 4px dotted #000;
+  border: 1px solid #000;
   height: 20px;
+  width: 100%;
 }
 
 .search-container :hover {
